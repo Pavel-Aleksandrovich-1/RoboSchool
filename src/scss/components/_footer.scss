@@ -1,0 +1,33 @@
+.footer {
+  padding: 90px 30px 40px;
+  background-color: #424242;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+  &__left {
+    grid-column: 5 span;
+  }
+  &__right {
+    grid-column: 2 span;
+  }
+  &__end {
+    grid-column: 3 span;
+  }
+  &__image {
+    margin-bottom: 30px;
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  &__adress {
+    font-weight: 400;
+    color: var(--Satin-Linen);
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 45px;
+  }
+}
