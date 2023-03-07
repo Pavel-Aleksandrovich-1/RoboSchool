@@ -1,0 +1,33 @@
+.achievements {
+  margin-bottom: 150px;
+  min-height: 100px;
+  background-color: rgba(107, 80, 55, 0.75);
+  &__content {
+    padding: 75px 92px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 162px;
+  }
+  &__item {
+    grid-column: 2 span;
+    width: 162px;
+  }
+  &__digit {
+    font-family: "PlayfairDisplay";
+    font-weight: 700;
+    font-size: 49px;
+    color: var(--light-color);
+    text-align: center;
+    display: flex;
+  }
+  &__text {
+    font-weight: 600;
+    line-height: 160%;
+    color: var(--light-color);
+    text-align: center;
+    font-size: 17px;
+    margin: 0;
+  }
+}

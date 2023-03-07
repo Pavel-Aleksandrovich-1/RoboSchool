@@ -1,0 +1,69 @@
+.special {
+  margin-bottom: 100px;
+  &__block {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  &__left {
+    grid-column: 6 span;
+    background-color: #ddc57c;
+    height: 519px;
+  }
+  &__right {
+    grid-column: 6 span;
+  }
+  &__title {
+    font-family: "PlayfairDisplay";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    padding: 15px 35px;
+    color: #e7e4db;
+    background-color: var(--Tundora);
+    border-radius: 70px;
+    width: 225px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  &__box {
+    padding: 70px 20px 20px;
+    text-align: center;
+  }
+  &__discounter {
+    margin: 0;
+    color: var(--Tundora);
+    font-size: 130px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url(../img/special__flor-left.png);
+      width: 72px;
+      height: 136px;
+      position: absolute;
+      left: 150px;
+      top: 0;
+      background-repeat: no-repeat;
+    }
+    &::before {
+      content: "";
+      background-image: url(../img/special__flor-right.png);
+      width: 72px;
+      height: 136px;
+      position: absolute;
+      right: 150px;
+      top: 0;
+      background-repeat: no-repeat;
+    }
+  }
+  &__text {
+    margin: 0;
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--Tundora);
+    max-width: 215px;
+    margin: 0 auto;
+  }
+}

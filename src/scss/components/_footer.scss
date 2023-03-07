@@ -1,0 +1,14 @@
+.footer {
+
+}
+git config --global user.name "Pavel-Aleksandrovich-1"
+git config --global user.email "pavelaleksandrovichgid@gmail.com"
+cat ~/.gitconfig
+git init
+git add .
+git commit -m "First commit"
+
+
+git remote add origin https://github.com/Pavel-Aleksandrovich-1/PA.git
+ git branch -M main
+git push -u origin main

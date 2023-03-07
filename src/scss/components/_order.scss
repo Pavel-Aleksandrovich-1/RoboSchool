@@ -1,0 +1,28 @@
+.order {
+  &__title {
+    font-family: "PlayfairDisplay";
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--Abbey);
+    max-width: 460px;
+    margin: 0 auto;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__descr {
+    margin: 0;
+    font-family: "JosefinSlab";
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--Abbey);
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__form {
+    max-width: 950px;
+  }
+}

@@ -1,0 +1,79 @@
+.select {
+  margin-bottom: 200px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    width: 173px;
+    height: 304px;
+    z-index: -1;
+    background-image: url(../img/select__decor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+  }
+  &__left {
+    grid-column: 7 span;
+  }
+  &__right {
+    grid-column: 5 span;
+  }
+  &__image {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      bottom: -20px;
+      width: 200px;
+      height: 200px;
+      background-color: transparent;
+      border: 4px solid var(--Shingle-Fawn);
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: var(--Contessa);
+      right: 45px;
+      top: -20px;
+      width: 200px;
+      height: 200px;
+      z-index: -1;
+    }
+  }
+  &__right {
+    transform: translateY(150px);
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url(../img/select__image_f.png);
+      width: 138px;
+      height: 76px;
+      position: absolute;
+      left: 0;
+      top: -95px;
+      background-repeat: no-repeat;
+    }
+  }
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 160%;
+    color: var(--Abbey);
+  }
+  &__text {
+    margin: 0;
+    line-height: 150%;
+    color: var(--Shingle-Fawn);
+    font-size: 20px;
+    max-width: 400px;
+  }
+}
